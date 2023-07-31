@@ -4,15 +4,34 @@
 # Стихотворение  Винни-Пух вбивает в программу с клавиатуры.
 # В ответе напишите “Парам пам-пам”, если с ритмом все в порядке и “Пам парам”, если с ритмом все не в порядке
 
-song = "пара-ра-рам рам-пам-папам па-ра-па-дам"
-long = song.split(" ")
-print(long)
-list = []
-for i in long:
-    list.append(i.count("а"))
+# song = "пара-ра-рам рам-пам-папам па-ра-па-дам"
+# long = song.split(" ")
+# print(long)
+# list = []
+# for i in long:
+#     list.append(i.count("а"))
 
-for i in range (1,len(list)):
-    if list[i] != list[0]:
-        print("Пам парам")
-        exit
-print("Парам пам-пам")
+# for i in range (1,len(list)):
+#     if list[i] != list[0]:
+#         print("Пам парам")
+#         exit
+# print("Парам пам-пам")
+
+
+
+# Задача 36: Напишите функцию print_operation_table(operation, num_rows=6, num_columns=6), 
+# которая принимает в качестве аргумента функцию, вычисляющую элемент по номеру строки и столбца. 
+# Аргументы num_rows и num_columns указывают число строк и столбцов таблицы, которые должны быть распечатаны. 
+# Нумерация строк и столбцов идет с единицы (подумайте, почему не с нуля). 
+# Примечание: бинарной операцией называется любая операция, у которой ровно два аргумента, как, например, у операции умножения.
+
+# def print_operation_table (operation, num_rows=6, num_columns=6):
+#     table = [
+#         [operation (x, y) for x in range (1, num_rows +1)]
+#         for y in range (1, num_columns +1)
+#     ]
+#     for row in table:
+#         for elem in row:
+#             print(elem, end="\t")
+#         print()
+# print_operation_table(lambda x, y: x+y)
